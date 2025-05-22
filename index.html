@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ronin Flipbook</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="turn.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      overflow: auto;
+    }
+    #flipbook {
+      width: 90vw;
+      max-width: 1000px;
+      height: 600px;
+      margin: 40px auto;
+      position: relative;
+    }
+    .page {
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+    .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+<div class="page"><img src="Page 1.jpg" alt="Page 1"/></div>
+<div class="page"><img src="Page 2.jpg" alt="Page 2"/></div>
+<div class="page"><img src="Page 3.jpg" alt="Page 3"/></div>
+<div class="page"><img src="Page 4.jpg" alt="Page 4"/></div>
+<div class="page"><img src="Page 5.jpg" alt="Page 5"/></div>
+<div class="page"><img src="Page 6.jpg" alt="Page 6"/></div>
+<div class="page"><img src="Page 7.jpg" alt="Page 7"/></div>
+<div class="page"><img src="Page 8.jpg" alt="Page 8"/></div>
+<div class="page"><img src="Page 9.jpg" alt="Page 9"/></div>
+<div class="page"><img src="Page 10.jpg" alt="Page 10"/></div>
+<div class="page"><img src="Page 11.jpg" alt="Page 11"/></div>
+<div class="page"><img src="Page 12.jpg" alt="Page 12"/></div>
+<div class="page"><img src="Page 13.jpg" alt="Page 13"/></div>
+<div class="page"><img src="Page 14.jpg" alt="Page 14"/></div>
+<div class="page"><img src="Page 15.jpg" alt="Page 15"/></div>
+<div class="page"><img src="Page 16.jpg" alt="Page 16"/></div>
+<div class="page"><img src="Page 17.jpg" alt="Page 17"/></div>
+<div class="page"><img src="Page 18.jpg" alt="Page 18"/></div>
+<div class="page"><img src="Page 19.jpg" alt="Page 19"/></div>
+<div class="page"><img src="Page 20.jpg" alt="Page 20"/></div>
+  </div>
+
+  <script>
+    $(function () {
+      if (typeof $.fn.turn !== 'function') {
+        console.error('Turn.js is not defined.');
+        return;
+      }
+      console.log('💡 Flipbook is initializing with real Turn.js...');
+      $('#flipbook').turn({
+        width: 1000,
+        height: 600,
+        autoCenter: true
+      });
+    });
+  </script>
+</body>
+</html>
