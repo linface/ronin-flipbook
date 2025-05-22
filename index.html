@@ -2,69 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ronin Flipbook</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
+  <title>Ronin Flipbook – Scroll</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       background: #111;
-      overflow: auto;
-    }
-    #flipbook {
-      width: 90vw;
-      max-width: 1000px;
-      height: 600px;
-      margin: 40px auto;
+      color: #fff;
+      font-family: sans-serif;
     }
     .page {
-      width: 45vw;
-      height: 600px;
+      width: 100%;
+      max-width: 800px;
+      margin: 40px auto;
     }
     .page img {
       width: 100%;
-      height: 100%;
+      height: auto;
       display: block;
-      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
-  <div id="flipbook">
-    <!-- Flipbook pages -->
-    <!-- You must have these files: Page 1.jpg to Page 20.jpg in the repo -->
-    <!-- Add or remove based on your actual image files -->
-    <div class="page"><img src="Page 1.jpg" /></div>
-    <div class="page"><img src="Page 2.jpg" /></div>
-    <div class="page"><img src="Page 3.jpg" /></div>
-    <div class="page"><img src="Page 4.jpg" /></div>
-    <div class="page"><img src="Page 5.jpg" /></div>
-    <div class="page"><img src="Page 6.jpg" /></div>
-    <div class="page"><img src="Page 7.jpg" /></div>
-    <div class="page"><img src="Page 8.jpg" /></div>
-    <div class="page"><img src="Page 9.jpg" /></div>
-    <div class="page"><img src="Page 10.jpg" /></div>
-    <div class="page"><img src="Page 11.jpg" /></div>
-    <div class="page"><img src="Page 12.jpg" /></div>
-    <div class="page"><img src="Page 13.jpg" /></div>
-    <div class="page"><img src="Page 14.jpg" /></div>
-    <div class="page"><img src="Page 15.jpg" /></div>
-    <div class="page"><img src="Page 16.jpg" /></div>
-    <div class="page"><img src="Page 17.jpg" /></div>
-    <div class="page"><img src="Page 18.jpg" /></div>
-    <div class="page"><img src="Page 19.jpg" /></div>
-    <div class="page"><img src="Page 20.jpg" /></div>
-  </div>
-
-  <script>
-    $(document).ready(function () {
-      $('#flipbook').turn({
-        width: $('#flipbook').width(),
-        height: 600,
-        autoCenter: true
-      });
-    });
-  </script>
+  <!-- 20 pages -->
+  <div class="page"><img src="Page 1.jpg" /></div>
+  <div class="page"><img src="Page 2.jpg" /></div>
+  <div class="page"><img src="Page 3.jpg" /></div>
+  <div class="page"><img src="Page 4.jpg" /></div>
+  <div class="page"><img src="Page 5.jpg" /></div>
+  <div class="page"><img src="Page 6.jpg" /></div>
+  <div class="page"><img src="Page 7.jpg" /></div>
+  <div class="page"><img src="Page 8.jpg" /></div>
+  <div class="page"><img src="Page 9.jpg" /></div>
+  <div class="page"><img src="Page 10.jpg" /></div>
+  <div class="page"><img src="Page 11.jpg" /></div>
+  <div class="page"><img src="Page 12.jpg" /></div>
+  <div class="page"><img src="Page 13.jpg" /></div>
+  <div class="page"><img src="Page 14.jpg" /></div>
+  <div class="page"><img src="Page 15.jpg" /></div>
+  <div class="page"><img src="Page 16.jpg" /></div>
+  <div class="page"><img src="Page 17.jpg" /></div>
+  <div class="page"><img src="Page 18.jpg" /></div>
+  <div class="page"><img src="Page 19.jpg" /></div>
+  <div class="page"><img src="Page 20.jpg" /></div>
 </body>
 </html>
